@@ -378,9 +378,9 @@ ConvectiveTransport light_source_to_lower_inlet_disp from light_source_store to 
 |||| upper separator
 
 MassTransfer upperSeparator_HNO3 of species HNO3 from upper_separator_heavy to upperSep_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     |S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'HNO3', '(-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)') |HNO3 w/o U
     S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'HNO3', '(3.568396E-23*C**6) - (5.829809E-19*C**5) + (2.605582E-15*C**4) + (0.000000000004308158*C**3) - (0.00000006433353*C**2) + (0.0001557243*C) + (0.0791305)') |HNO3 w/ U
 |    activation_times : 0, 600
@@ -389,9 +389,9 @@ MassTransfer upperSeparator_HNO3 of species HNO3 from upper_separator_heavy to u
 ||| upper inlet
 
 MassTransfer upperInlet_HNO3 of species HNO3 from upper_inlet_heavy to upper_inlet_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     |S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'HNO3', '(-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)') |HNO3 w/o U
     S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'HNO3', '(3.568396E-23*C**6) - (5.829809E-19*C**5) + (2.605582E-15*C**4) + (0.000000000004308158*C**3) - (0.00000006433353*C**2) + (0.0001557243*C) + (0.0791305)') |HNO3 w/ U
 |    activation_times : 0, 600
@@ -400,27 +400,27 @@ MassTransfer upperInlet_HNO3 of species HNO3 from upper_inlet_heavy to upper_inl
 ||| column stage
 
 MassTransfer s3_HNO3 of species HNO3 from stage_3_heavy to stage3_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     |S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'HNO3', '(-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)') |HNO3 w/o U
     S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'HNO3', '(3.568396E-23*C**6) - (5.829809E-19*C**5) + (2.605582E-15*C**4) + (0.000000000004308158*C**3) - (0.00000006433353*C**2) + (0.0001557243*C) + (0.0791305)') |HNO3 w/ U
 |    activation_times : 0, 600
 |    activation_response : 0, 1
 
 MassTransfer s2_HNO3 of species HNO3 from stage_2_heavy to stage2_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     |S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'HNO3', '(-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)') |HNO3 w/o U
     S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'HNO3', '(3.568396E-23*C**6) - (5.829809E-19*C**5) + (2.605582E-15*C**4) + (0.000000000004308158*C**3) - (0.00000006433353*C**2) + (0.0001557243*C) + (0.0791305)') |HNO3 w/ U
 |    activation_times : 0, 600
 |    activation_response : 0, 1
     
 MassTransfer s1_HNO3 of species HNO3 from stage_1_heavy to stage1_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     |S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'HNO3', '(-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)') |HNO3 w/o U
     S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'HNO3', '(3.568396E-23*C**6) - (5.829809E-19*C**5) + (2.605582E-15*C**4) + (0.000000000004308158*C**3) - (0.00000006433353*C**2) + (0.0001557243*C) + (0.0791305)') |HNO3 w/ U
 |    activation_times : 0, 600
@@ -429,9 +429,9 @@ MassTransfer s1_HNO3 of species HNO3 from stage_1_heavy to stage1_light_disp
 ||| lower inlet
 
 MassTransfer lowerInlet_HNO3 of species HNO3 from lower_inlet_heavy to lowerInlet_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     |S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'HNO3', '(-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)') |HNO3 w/o U
     S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'HNO3', '(3.568396E-23*C**6) - (5.829809E-19*C**5) + (2.605582E-15*C**4) + (0.000000000004308158*C**3) - (0.00000006433353*C**2) + (0.0001557243*C) + (0.0791305)') |HNO3 w/ U
 |    activation_times : 0, 600
@@ -444,9 +444,9 @@ MassTransfer lowerInlet_HNO3 of species HNO3 from lower_inlet_heavy to lowerInle
 |||| upper separator
 
 MassTransfer upperSeparator_U of species U from upper_separator_heavy to upperSep_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'U', '(-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382)') |U w/ HNO3
 |    activation_times : 0, 600
 |    activation_response : 0, 1
@@ -454,9 +454,9 @@ MassTransfer upperSeparator_U of species U from upper_separator_heavy to upperSe
 ||| upper inlet
 
 MassTransfer upperInlet_U of species U from upper_inlet_heavy to upper_inlet_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'U', '(-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382)') |U w/ HNO3
 |    activation_times : 0, 600
 |    activation_response : 0, 1
@@ -464,25 +464,25 @@ MassTransfer upperInlet_U of species U from upper_inlet_heavy to upper_inlet_lig
 ||| column stage
 
 MassTransfer s3_U of species U from stage_3_heavy to stage3_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'U', '(-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382)') |U w/ HNO3
 |    activation_times : 0, 600
 |    activation_response : 0, 1
 
 MassTransfer s2_U of species U from stage_2_heavy to stage2_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'U', '(-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382)') |U w/ HNO3
 |    activation_times : 0, 600
 |    activation_response : 0, 1
     
 MassTransfer s1_U of species U from stage_1_heavy to stage1_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'U', '(-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382)') |U w/ HNO3
 |    activation_times : 0, 600
 |    activation_response : 0, 1
@@ -490,9 +490,9 @@ MassTransfer s1_U of species U from stage_1_heavy to stage1_light_disp
 ||| lower inlet
 
 MassTransfer lowerInlet_U of species U from lower_inlet_heavy to lowerInlet_light_disp
-    ks : 1*10**-5
-    kt : 1*10**-5
-    area : 0.05
+    ks : 8.03*10**-4
+    kt : 5.03*10**-5
+    area : 0.0498
     S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'U', '(-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382)') |U w/ HNO3
 |    activation_times : 0, 600
 |    activation_response : 0, 1
