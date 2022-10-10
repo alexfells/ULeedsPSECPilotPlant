@@ -6,9 +6,9 @@
 Solver RK45
     t_start : 0
     t_final : 60 * 100
-    atol : 10**-6
-    rtol : 10**-6
-    max step size : 1
+    atol : 10**-4
+    rtol : 10**-2
+    max step size : 10
     write interval : 300
 
 Defaults 
