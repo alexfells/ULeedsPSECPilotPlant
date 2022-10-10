@@ -37,11 +37,11 @@ Surroundings heavy_source_store of continuous phase heavy_phase
 ||| upper separator
 
 Compartment upper_separator_heavy of continuous phase heavy_phase  
-    volume : 3.14*10**-3                  | set later
+    volume : 3.14*10**-3 * 0.4                 | set later
     IncompressiblePhase heavy_phase to upper_separator_heavy 
-        HNO3 : 3.14*10**-3 * (3.15 * 1000)   | N = V * C 
-        U : 3.14*10**-3 * 3.5 / 0.238     | N = m / mr = (m^ * V) / mr
-        H2O : 3.14*10**-3 * 1000 / 0.018   | N = V * rho / mr
+        HNO3 : 3.14*10**-3 * 0.4 * (3.15 * 1000)   | N = V * C 
+        U : 3.14*10**-3 * 0.4 * 3.5 / 0.238     | N = m / mr = (m^ * V) / mr
+        H2O : 3.14*10**-3 * 0.4 * 1000 / 0.018   | N = V * rho / mr
         density : 1510
 
 ||| upper inlet
