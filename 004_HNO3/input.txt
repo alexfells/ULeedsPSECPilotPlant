@@ -28,7 +28,7 @@ DefineComponents | name : molecular weight (kg/mole)
 Surroundings heavy_source_store of continuous phase heavy_phase 
     volume : 10
     IncompressiblePhase heavy_phase to heavy_source_store
-        HNO3 : 0.05 * 10 * 1000
+        HNO3 : 0.005 * 10 * 1000
         H2O : 555000
         density : 1072
 
@@ -37,7 +37,7 @@ Surroundings heavy_source_store of continuous phase heavy_phase
 Compartment upper_separator_heavy of continuous phase heavy_phase  
     volume : 3.14*10**-3 * 0.5 * (1-0.0704)
     IncompressiblePhase heavy_phase to upper_separator_heavy 
-        HNO3 : 3.14*10**-3 * 0.5 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.14*10**-3 * 0.5 * (1-0.0704) * (0.005 * 1000)   | N = V * C 
         H2O : 3.14*10**-3 * 0.5 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
@@ -46,7 +46,7 @@ Compartment upper_separator_heavy of continuous phase heavy_phase
 Compartment upper_inlet_heavy of continuous phase heavy_phase  
     volume : 3.32*10**-4 * (1-0.0704)
     IncompressiblePhase heavy_phase to upper_inlet_heavy
-        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.005 * 1000)   | N = V * C 
         H2O : 3.32*10**-4 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
@@ -55,21 +55,21 @@ Compartment upper_inlet_heavy of continuous phase heavy_phase
 Compartment stage_3_heavy of continuous phase heavy_phase 
     volume : 3.32*10**-4 * (1-0.0704)
     IncompressiblePhase heavy_phase to stage_3_heavy 
-        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.005 * 1000)   | N = V * C 
         H2O : 3.32*10**-4 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
 Compartment stage_2_heavy of continuous phase heavy_phase 
     volume : 3.32*10**-4 * (1-0.0704)
     IncompressiblePhase heavy_phase to stage_2_heavy 
-        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.005 * 1000)   | N = V * C 
         H2O : 3.32*10**-4 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
 Compartment stage_1_heavy of continuous phase heavy_phase 
     volume : 3.32*10**-4 * (1-0.0704)
     IncompressiblePhase heavy_phase to stage_1_heavy 
-        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.005 * 1000)   | N = V * C 
         H2O : 3.32*10**-4 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
@@ -78,7 +78,7 @@ Compartment stage_1_heavy of continuous phase heavy_phase
 Compartment lower_inlet_heavy of continuous phase heavy_phase 
     volume : 3.32*10**-4 * (1-0.0704)
     IncompressiblePhase heavy_phase to lower_inlet_heavy 
-        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.005 * 1000)   | N = V * C 
         H2O : 3.32*10**-4 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
@@ -87,7 +87,7 @@ Compartment lower_inlet_heavy of continuous phase heavy_phase
 Compartment lower_seperator_heavy of continuous phase heavy_phase 
     volume : 6.28*10**-3 * (1-0.0704)
     IncompressiblePhase heavy_phase to lower_seperator_heavy 
-        HNO3 : 6.28*10**-3 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 6.28*10**-3 * (1-0.0704) * (0.005 * 1000)   | N = V * C 
         H2O : 6.28*10**-3 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
@@ -115,14 +115,14 @@ Surroundings light_sink_store of continuous phase light_phase
 Compartment upperSep_light_coal of continuous phase light_phase  
     volume : 3.14*10**-3 * 0.5
     IncompressiblePhase light_phase to upperSep_light_coal 
-        HNO3 : 3.14*10**-3 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.14*10**-3 * 0.50 * (0.26 * 1000)
         TBPinDD : 3.14*10**-3 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818  
 
 Compartment upperSep_light_disp of continuous phase light_phase   
     volume : 3.14*10**-3 * 0.5 * 0.0704
     IncompressiblePhase light_phase to upperSep_light_disp
-        HNO3 : 3.14*10**-3 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.14*10**-3 * 0.0704 * 0.50 * (0.26 * 1000)
         TBPinDD : 3.14*10**-3 * 0.0704 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -131,7 +131,7 @@ Compartment upperSep_light_disp of continuous phase light_phase
 Compartment upper_inlet_light_disp of continuous phase light_phase   
     volume : 3.32*10**-4 * 0.0704
     IncompressiblePhase light_phase to upper_inlet_light_disp
-        HNO3 : 3.32*10**-4 * 0.0704 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * (0.26 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -140,14 +140,14 @@ Compartment upper_inlet_light_disp of continuous phase light_phase
 Compartment stage3_light_coal of continuous phase light_phase  
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage3_light_coal 
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.26 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
 Compartment stage3_light_disp of continuous phase light_phase   
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage3_light_disp
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.26 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -156,14 +156,14 @@ Compartment stage3_light_disp of continuous phase light_phase
 Compartment stage2_light_coal of continuous phase light_phase  
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage2_light_coal 
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.26 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
 Compartment stage2_light_disp of continuous phase light_phase   
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage2_light_disp
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.26 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -172,14 +172,14 @@ Compartment stage2_light_disp of continuous phase light_phase
 Compartment stage1_light_coal of continuous phase light_phase  
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage1_light_coal 
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.26 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
 Compartment stage1_light_disp of continuous phase light_phase   
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage1_light_disp
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.26 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -188,14 +188,14 @@ Compartment stage1_light_disp of continuous phase light_phase
 Compartment lowerInlet_light_coal of continuous phase light_phase  
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to lowerInlet_light_coal 
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.26 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
 Compartment lowerInlet_light_disp of continuous phase light_phase   
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to lowerInlet_light_disp
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.26 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -204,7 +204,7 @@ Compartment lowerInlet_light_disp of continuous phase light_phase
 Surroundings light_source_store of continuous phase light_phase 
     volume : 10 
     IncompressiblePhase light_phase to light_source_store 
-        HNO3 : 10 * (0.33 * 1000)   | N = V * C 
+        HNO3 : 10 * (0.26 * 1000)   | N = V * C 
         TBPinDD : (818 * 10) / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
