@@ -50,7 +50,7 @@ Compartment upper_inlet_heavy of continuous phase heavy_phase
     volume : 3.32*10**-4 * (1-0.0637)
     IncompressiblePhase heavy_phase to upper_inlet_heavy
         HNO3 : 3.32*10**-4 * (1-0.0637) * (3.15 * 1000)   | N = V * C 
-        U : 3.32*10**-4 * (1-0.0637) * 3.5 / 0.238     | N = m / mr = (m^ * V) / mr
+        U : 3.32*10**-4 * (1-0.0637) * 3.57 / 0.238     | N = m / mr = (m^ * V) / mr
         H2O : 3.32*10**-4 * (1-0.0637) * 1000 / 0.018   | N = V * rho / mr
         density : 1090
 
@@ -60,7 +60,7 @@ Compartment stage_3_heavy of continuous phase heavy_phase
     volume : 3.32*10**-4 * (1-0.0637)
     IncompressiblePhase heavy_phase to stage_3_heavy 
         HNO3 : 3.32*10**-4 * (1-0.0637) * (3.15 * 1000)   | N = V * C 
-        U : 3.32*10**-4 * (1-0.0637) * 3.5 / 0.238     | N = m / mr = (m^ * V) / mr
+        U : 3.32*10**-4 * (1-0.0637) * 3.57 / 0.238     | N = m / mr = (m^ * V) / mr
         H2O : 3.32*10**-4 * (1-0.0637) * 1000 / 0.018   | N = V * rho / mr
         density : 1090
 
@@ -68,7 +68,7 @@ Compartment stage_2_heavy of continuous phase heavy_phase
     volume : 3.32*10**-4 * (1-0.0637)
     IncompressiblePhase heavy_phase to stage_2_heavy 
         HNO3 : 3.32*10**-4 * (1-0.0637) * (3.15 * 1000)   | N = V * C 
-        U : 3.32*10**-4 * (1-0.0637) * 3.5 / 0.238     | N = m / mr = (m^ * V) / mr
+        U : 3.32*10**-4 * (1-0.0637) * 3.57 / 0.238     | N = m / mr = (m^ * V) / mr
         H2O : 3.32*10**-4 * (1-0.0637) * 1000 / 0.018   | N = V * rho / mr
         density : 1090
 
@@ -76,7 +76,7 @@ Compartment stage_1_heavy of continuous phase heavy_phase
     volume : 3.32*10**-4 * (1-0.0637)
     IncompressiblePhase heavy_phase to stage_1_heavy 
         HNO3 : 3.32*10**-4 * (1-0.0637) * (3.15 * 1000)   | N = V * C 
-        U : 3.32*10**-4 * (1-0.0637) * 3.5 / 0.238     | N = m / mr = (m^ * V) / mr
+        U : 3.32*10**-4 * (1-0.0637) * 3.57 / 0.238     | N = m / mr = (m^ * V) / mr
         H2O : 3.32*10**-4 * (1-0.0637) * 1000 / 0.018   | N = V * rho / mr
         density : 1090
 
@@ -86,7 +86,7 @@ Compartment lower_inlet_heavy of continuous phase heavy_phase
     volume : 3.32*10**-4 * (1-0.0637)
     IncompressiblePhase heavy_phase to lower_inlet_heavy 
         HNO3 : 3.32*10**-4 * (1-0.0637) * (3.15 * 1000)   | N = V * C 
-        U : 3.32*10**-4 * (1-0.0637) * 3.5 / 0.238     | N = m / mr = (m^ * V) / mr
+        U : 3.32*10**-4 * (1-0.0637) * 3.57 / 0.238     | N = m / mr = (m^ * V) / mr
         H2O : 3.32*10**-4 * (1-0.0637) * 1000 / 0.018   | N = V * rho / mr
         density : 1090
 
@@ -96,7 +96,7 @@ Compartment lower_seperator_heavy of continuous phase heavy_phase
     volume : 6.28*10**-3 * (1-0.0637)
     IncompressiblePhase heavy_phase to lower_seperator_heavy 
         HNO3 : 6.28*10**-3 * (1-0.0637) * (3.15 * 1000)   | N = V * C 
-        U : 6.28*10**-3 * (1-0.0637) * 3.5 / 0.238     | N = m / mr = (m^ * V) / mr
+        U : 6.28*10**-3 * (1-0.0637) * 3.57 / 0.238     | N = m / mr = (m^ * V) / mr
         H2O : 6.28*10**-3 * (1-0.0637) * 1000 / 0.018   | N = V * rho / mr
         density : 1090
 
