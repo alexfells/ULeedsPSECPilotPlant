@@ -5,7 +5,7 @@
 |Solver Tsit5() |Rosenbrock23	| For julia see https://diffeq.sciml.ai/stable/solvers/ode_solve/ and https://github.com/SciML/diffeqpy
 Solver RK45
     t_start : 0
-    t_final : 60 * 110
+    t_final : 60 * 100
     atol : 10**-5
     rtol : 10**-2
     max step size : 10
