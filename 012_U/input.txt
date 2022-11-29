@@ -458,82 +458,82 @@ MassTransfer lowerInlet_HNO3_reverse of species HNO3 from lowerInlet_light_disp 
 
 |||| upper separator
 
-|MassTransfer upperSeparator_U of species U from upper_separator_heavy to upperSep_light_disp
-|    ks : 1.75*10**-3
-|    kt : 1.66*10**-5 * 0.15 | x_K_U
-|    area : 0.0138
-|    S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|
-|MassTransfer upperSeparator_U_reverse of species U from upperSep_light_disp to upper_separator_heavy
-|    ks : 1.66*10**-5 * 0.15 | x_K_U
-|    kt : 1.75*10**-3
-|    area : 0.0138
-|    S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'U', '((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|
-|||| upper inlet
-|
-|MassTransfer upperInlet_U of species U from upper_inlet_heavy to upper_inlet_light_disp
-|    ks : 1.75*10**-3
-|    kt : 1.66*10**-5 * 0.15 | x_K_U
-|    area : 0.0138
-|    S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|
-|MassTransfer upperInlet_U_reverse of species U from upper_inlet_light_disp to upper_inlet_heavy
-|    ks : 1.66*10**-5 * 0.15 | x_K_U
-|    kt : 1.75*10**-3
-|    area : 0.0138
-|    S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'U', '((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|
-|||| column stage
-|
-|MassTransfer s3_U of species U from stage_3_heavy to stage3_light_disp
-|    ks : 1.75*10**-3
-|    kt : 1.66*10**-5 * 0.15 | x_K_U
-|    area : 0.0138
-|    S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|
-|MassTransfer s3_U_reverse of species U from stage3_light_disp to stage_3_heavy
-|    ks : 1.66*10**-5 * 0.15 | x_K_U
-|    kt : 1.75*10**-3
-|    area : 0.0138
-|    S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'U', '((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|
-|MassTransfer s2_U of species U from stage_2_heavy to stage2_light_disp
-|    ks : 1.75*10**-3
-|    kt : 1.66*10**-5 * 0.15 | x_K_U
-|    area : 0.0138
-|    S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|    
-|    MassTransfer s2_U_reverse of species U from stage2_light_disp to stage_2_heavy
-|    ks : 1.66*10**-5 * 0.15 | x_K_U
-|    kt : 1.75*10**-3
-|    area : 0.0138
-|    S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|    
-|MassTransfer s1_U of species U from stage_1_heavy to stage1_light_disp
-|    ks : 1.75*10**-3
-|    kt : 1.66*10**-5 * 0.15 | x_K_U
-|    area : 0.0138
-|    S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|    
-|MassTransfer s1_U_reverse of species U from stage1_light_disp to stage_1_heavy
-|    ks : 1.66*10**-5 * 0.15 | x_K_U
-|    kt : 1.75*10**-3
-|    area : 0.0138
-|    S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'U', '((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|    
-|||| lower inlet
-|
-|MassTransfer lowerInlet_U of species U from lower_inlet_heavy to lowerInlet_light_disp
-|    ks : 1.75*10**-3
-|    kt : 1.66*10**-5 * 0.15 | x_K_U
-|    area : 0.0138
-|    S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|
-|MassTransfer lowerInlet_U_reverse of species U from lowerInlet_light_disp to lower_inlet_heavy
-|    ks : 1.66*10**-5 * 0.15 | x_K_U
-|    kt : 1.75*10**-3
-|    area : 0.0138
-|    S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'U', '((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
-|
+MassTransfer upperSeparator_U of species U from upper_separator_heavy to upperSep_light_disp
+    ks : 1.75*10**-3
+    kt : 1.66*10**-5 * 0.15 | x_K_U
+    area : 0.0138
+    S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+
+MassTransfer upperSeparator_U_reverse of species U from upperSep_light_disp to upper_separator_heavy
+    ks : 1.66*10**-5 * 0.15 | x_K_U
+    kt : 1.75*10**-3
+    area : 0.0138
+    S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'U', '((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+
+||| upper inlet
+
+MassTransfer upperInlet_U of species U from upper_inlet_heavy to upper_inlet_light_disp
+    ks : 1.75*10**-3
+    kt : 1.66*10**-5 * 0.15 | x_K_U
+    area : 0.0138
+    S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+
+MassTransfer upperInlet_U_reverse of species U from upper_inlet_light_disp to upper_inlet_heavy
+    ks : 1.66*10**-5 * 0.15 | x_K_U
+    kt : 1.75*10**-3
+    area : 0.0138
+    S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'U', '((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+
+||| column stage
+
+MassTransfer s3_U of species U from stage_3_heavy to stage3_light_disp
+    ks : 1.75*10**-3
+    kt : 1.66*10**-5 * 0.15 | x_K_U
+    area : 0.0138
+    S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+
+MassTransfer s3_U_reverse of species U from stage3_light_disp to stage_3_heavy
+    ks : 1.66*10**-5 * 0.15 | x_K_U
+    kt : 1.75*10**-3
+    area : 0.0138
+    S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'U', '((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+
+MassTransfer s2_U of species U from stage_2_heavy to stage2_light_disp
+    ks : 1.75*10**-3
+    kt : 1.66*10**-5 * 0.15 | x_K_U
+    area : 0.0138
+    S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+    
+    MassTransfer s2_U_reverse of species U from stage2_light_disp to stage_2_heavy
+    ks : 1.66*10**-5 * 0.15 | x_K_U
+    kt : 1.75*10**-3
+    area : 0.0138
+    S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+    
+MassTransfer s1_U of species U from stage_1_heavy to stage1_light_disp
+    ks : 1.75*10**-3
+    kt : 1.66*10**-5 * 0.15 | x_K_U
+    area : 0.0138
+    S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+    
+MassTransfer s1_U_reverse of species U from stage1_light_disp to stage_1_heavy
+    ks : 1.66*10**-5 * 0.15 | x_K_U
+    kt : 1.75*10**-3
+    area : 0.0138
+    S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'U', '((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+    
+||| lower inlet
+
+MassTransfer lowerInlet_U of species U from lower_inlet_heavy to lowerInlet_light_disp
+    ks : 1.75*10**-3
+    kt : 1.66*10**-5 * 0.15 | x_K_U
+    area : 0.0138
+    S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'U', '1/((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+
+MassTransfer lowerInlet_U_reverse of species U from lowerInlet_light_disp to lower_inlet_heavy
+    ks : 1.66*10**-5 * 0.15 | x_K_U
+    kt : 1.75*10**-3
+    area : 0.0138
+    S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'U', '((-7.452588E-21* C**6) + (1.692136E-16* C**5) - (0.000000000001361756* C**4) + (0.000000004279762* C**3) - (0.00000383994* C**2) + (0.006251006* C) + (0.2380382))') |U w/ HNO3
+
 end
