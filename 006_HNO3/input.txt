@@ -5,7 +5,7 @@
 |Solver Tsit5() |Rosenbrock23	| For julia see https://diffeq.sciml.ai/stable/solvers/ode_solve/ and https://github.com/SciML/diffeqpy
 Solver RK45
     t_start : 0
-    t_final : 60 * 100
+    t_final : 60 * 80
     atol : 10**-6
     rtol : 10**-3
     max step size : 10
@@ -35,10 +35,10 @@ Surroundings heavy_source_store of continuous phase heavy_phase
 ||| upper separator
 
 Compartment upper_separator_heavy of continuous phase heavy_phase  
-    volume : 3.14*10**-3 * 0.5 * (1-0.0704)
+    volume : 6.28*10**-3 * 0.5 * (1-0.0704)
     IncompressiblePhase heavy_phase to upper_separator_heavy 
-        HNO3 : 3.14*10**-3 * 0.5 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
-        H2O : 3.14*10**-3 * 0.5 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
+        HNO3 : 6.28*10**-3 * 0.5 * (1-0.0704) * (0.21 * 1000)   | N = V * C 
+        H2O : 6.28*10**-3 * 0.5 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
 ||| upper inlet
@@ -46,7 +46,7 @@ Compartment upper_separator_heavy of continuous phase heavy_phase
 Compartment upper_inlet_heavy of continuous phase heavy_phase  
     volume : 3.32*10**-4 * (1-0.0704)
     IncompressiblePhase heavy_phase to upper_inlet_heavy
-        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.21 * 1000)   | N = V * C 
         H2O : 3.32*10**-4 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
@@ -55,21 +55,21 @@ Compartment upper_inlet_heavy of continuous phase heavy_phase
 Compartment stage_3_heavy of continuous phase heavy_phase 
     volume : 3.32*10**-4 * (1-0.0704)
     IncompressiblePhase heavy_phase to stage_3_heavy 
-        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.21 * 1000)   | N = V * C 
         H2O : 3.32*10**-4 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
 Compartment stage_2_heavy of continuous phase heavy_phase 
     volume : 3.32*10**-4 * (1-0.0704)
     IncompressiblePhase heavy_phase to stage_2_heavy 
-        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.21 * 1000)   | N = V * C 
         H2O : 3.32*10**-4 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
 Compartment stage_1_heavy of continuous phase heavy_phase 
     volume : 3.32*10**-4 * (1-0.0704)
     IncompressiblePhase heavy_phase to stage_1_heavy 
-        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.21 * 1000)   | N = V * C 
         H2O : 3.32*10**-4 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
@@ -78,7 +78,7 @@ Compartment stage_1_heavy of continuous phase heavy_phase
 Compartment lower_inlet_heavy of continuous phase heavy_phase 
     volume : 3.32*10**-4 * (1-0.0704)
     IncompressiblePhase heavy_phase to lower_inlet_heavy 
-        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 3.32*10**-4 * (1-0.0704) * (0.21 * 1000)   | N = V * C 
         H2O : 3.32*10**-4 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
@@ -87,7 +87,7 @@ Compartment lower_inlet_heavy of continuous phase heavy_phase
 Compartment lower_seperator_heavy of continuous phase heavy_phase 
     volume : 6.28*10**-3 * (1-0.0704)
     IncompressiblePhase heavy_phase to lower_seperator_heavy 
-        HNO3 : 6.28*10**-3 * (1-0.0704) * (0.05 * 1000)   | N = V * C 
+        HNO3 : 6.28*10**-3 * (1-0.0704) * (0.21 * 1000)   | N = V * C 
         H2O : 6.28*10**-3 * (1-0.0704) * 1000 / 0.018   | N = V * rho / mr
         density : 1072
 
@@ -113,17 +113,17 @@ Surroundings light_sink_store of continuous phase light_phase
 ||| upper separator
 
 Compartment upperSep_light_coal of continuous phase light_phase  
-    volume : 3.14*10**-3 * 0.5
+    volume : 6.28*10**-3 * 0.5
     IncompressiblePhase light_phase to upperSep_light_coal 
-        HNO3 : 3.14*10**-3 * 0.50 * (0.33 * 1000)
-        TBPinDD : 3.14*10**-3 * 818 / 0.1956   | N = V * rho / mr, set later
+        HNO3 : 6.28*10**-3 * 0.50 * (0.17 * 1000)
+        TBPinDD : 6.28*10**-3 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818  
 
 Compartment upperSep_light_disp of continuous phase light_phase   
-    volume : 3.14*10**-3 * 0.5 * 0.0704
+    volume : 6.28*10**-3 * 0.5 * 0.0704
     IncompressiblePhase light_phase to upperSep_light_disp
-        HNO3 : 3.14*10**-3 * 0.0704 * 0.50 * (0.33 * 1000)
-        TBPinDD : 3.14*10**-3 * 0.0704 * 818 / 0.1956   | N = V * rho / mr, set later
+        HNO3 : 6.28*10**-3 * 0.0704 * 0.50 * (0.17 * 1000)
+        TBPinDD : 6.28*10**-3 * 0.0704 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
 ||| upper inlet
@@ -131,7 +131,7 @@ Compartment upperSep_light_disp of continuous phase light_phase
 Compartment upper_inlet_light_disp of continuous phase light_phase   
     volume : 3.32*10**-4 * 0.0704
     IncompressiblePhase light_phase to upper_inlet_light_disp
-        HNO3 : 3.32*10**-4 * 0.0704 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * (0.17 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -140,14 +140,14 @@ Compartment upper_inlet_light_disp of continuous phase light_phase
 Compartment stage3_light_coal of continuous phase light_phase  
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage3_light_coal 
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.17 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
 Compartment stage3_light_disp of continuous phase light_phase   
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage3_light_disp
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.17 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -156,14 +156,14 @@ Compartment stage3_light_disp of continuous phase light_phase
 Compartment stage2_light_coal of continuous phase light_phase  
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage2_light_coal 
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.17 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
 Compartment stage2_light_disp of continuous phase light_phase   
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage2_light_disp
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.17 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -172,14 +172,14 @@ Compartment stage2_light_disp of continuous phase light_phase
 Compartment stage1_light_coal of continuous phase light_phase  
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage1_light_coal 
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.17 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
 Compartment stage1_light_disp of continuous phase light_phase   
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to stage1_light_disp
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.17 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -188,14 +188,14 @@ Compartment stage1_light_disp of continuous phase light_phase
 Compartment lowerInlet_light_coal of continuous phase light_phase  
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to lowerInlet_light_coal 
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.17 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
 Compartment lowerInlet_light_disp of continuous phase light_phase   
     volume : 3.32*10**-4 * 0.0704 * 0.50
     IncompressiblePhase light_phase to lowerInlet_light_disp
-        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.33 * 1000)
+        HNO3 : 3.32*10**-4 * 0.0704 * 0.50 * (0.17 * 1000)
         TBPinDD : 3.32*10**-4 * 0.0704 * 0.50 * 818 / 0.1956   | N = V * rho / mr, set later
         density : 818 
 
@@ -354,80 +354,92 @@ ConvectiveTransport light_source_to_lower_inlet_disp from light_source_store to 
 ||| upper separator
 MassTransfer upperSeparator_HNO3 of species HNO3 from upper_separator_heavy to upperSep_light_disp
     ks : 1.70*10**-3
-    kt : 1.66*10**-5 * 3.5 | x_K
+    kt : 1.66*10**-5 * 5.0| x_K
     area : 0.0211
-    S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'HNO3', '(1/((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569)))') |HNO3 w/o U
 
 MassTransfer upperSeparator_HNO3_reverse of species HNO3 from upperSep_light_disp to upper_separator_heavy
-    ks : 1.66*10**-5 * 3.5 | x_K
+    ks : 1.66*10**-5 * 5.0| x_K
     kt : 1.70*10**-3
     area : 0.0211
-    S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'upper_separator_heavy', 'heavy_phase', 'HNO3', '((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569))') |HNO3 w/o U
 
 |||| upper inlet
 
 MassTransfer upperInlet_HNO3 of species HNO3 from upper_inlet_heavy to upper_inlet_light_disp
     ks : 1.70*10**-3
-    kt : 1.66*10**-5 * 3.5 | x_K
+    kt : 1.66*10**-5 * 5.0| x_K
     area : 0.0211
-    S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'HNO3', '(1/((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569)))') |HNO3 w/o U
 
 MassTransfer upperInlet_HNO3_reverse of species HNO3 from upper_inlet_light_disp to upper_inlet_heavy
-    ks : 1.66*10**-5 * 3.5 | x_K
+    ks : 1.66*10**-5 * 5.0| x_K
     kt : 1.70*10**-3
     area : 0.0211
-    S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'upper_inlet_heavy', 'heavy_phase', 'HNO3', '((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569))') |HNO3 w/o U
 
 ||| column stage
 
 MassTransfer s3_HNO3 of species HNO3 from stage_3_heavy to stage3_light_disp
     ks : 1.70*10**-3
-    kt : 1.66*10**-5 * 3.5 | x_K
+    kt : 1.66*10**-5 * 5.0| x_K
     area : 0.0211
-    S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'HNO3', '(1/((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569)))') |HNO3 w/o U
 
 MassTransfer s3_HNO3_reverse of species HNO3 from stage3_light_disp to stage_3_heavy
-    ks : 1.66*10**-5 * 3.5 | x_K
+    ks : 1.66*10**-5 * 5.0| x_K
     kt : 1.70*10**-3
     area : 0.0211
-    S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'stage_3_heavy', 'heavy_phase', 'HNO3', '((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569))') |HNO3 w/o U
 
 MassTransfer s2_HNO3 of species HNO3 from stage_2_heavy to stage2_light_disp
     ks : 1.70*10**-3
-    kt : 1.66*10**-5 * 3.5 | x_K
+    kt : 1.66*10**-5 * 5.0| x_K
     area : 0.0211
-    S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'HNO3', '(1/((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569)))') |HNO3 w/o U
 
 MassTransfer s2_HNO3_reverse of species HNO3 from stage2_light_disp to stage_2_heavy
-    ks : 1.66*10**-5 * 3.5 | x_K
+    ks : 1.66*10**-5 * 5.0| x_K
     kt : 1.70*10**-3
     area : 0.0211
-    S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
-
+    |S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'stage_2_heavy', 'heavy_phase', 'HNO3', '((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569))') |HNO3 w/o U
+        
 MassTransfer s1_HNO3 of species HNO3 from stage_1_heavy to stage1_light_disp
     ks : 1.70*10**-3
-    kt : 1.66*10**-5 * 3.5 | x_K
+    kt : 1.66*10**-5 * 5.0| x_K
     area : 0.0211
-    S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'HNO3', '(1/((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569)))') |HNO3 w/o U
 
 MassTransfer s1_HNO3_reverse of species HNO3 from stage1_light_disp to stage_1_heavy
-    ks : 1.66*10**-5 * 3.5 | x_K
+    ks : 1.66*10**-5 * 5.0| x_K
     kt : 1.70*10**-3
     area : 0.0211
-    S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'stage_1_heavy', 'heavy_phase', 'HNO3', '((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569))') |HNO3 w/o U
 
 ||| lower inlet
 
 MassTransfer lowerInlet_HNO3 of species HNO3 from lower_inlet_heavy to lowerInlet_light_disp
     ks : 1.70*10**-3
-    kt : 1.66*10**-5 * 3.5 | x_K
+    kt : 1.66*10**-5 * 5.0| x_K
     area : 0.0211
-    S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'HNO3', '(1/((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'HNO3', '(1/((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569)))') |HNO3 w/o U
 
 MassTransfer lowerInlet_HNO3_reverse of species HNO3 from lowerInlet_light_disp to lower_inlet_heavy
-    ks : 1.66*10**-5 * 3.5 | x_K
+    ks : 1.66*10**-5 * 5.0| x_K
     kt : 1.70*10**-3
     area : 0.0211
-    S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    |S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'HNO3', '(((-1.629145E-22 * C**6) + (3.599421E-18 * C**5) - (3.200304E-14 * C**4) + (1.467804E-10 * C**3) - (3.678222E-7 * C**2) + (4.635409E-4 * C) + (9.867248E-3)))') |HNO3 w/o U
+    S : @S_func_conc(self, 'lower_inlet_heavy', 'heavy_phase', 'HNO3', '((-0.00000000000000231*C**4) + (0.0000000000308*C**3) + (-0.000000146*C**2) + (0.000275*C) + (0.0569))') |HNO3 w/o U
 
 end
